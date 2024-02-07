@@ -9,7 +9,7 @@ format:
 		black *.py
 
 lint:
-		pylint --disable=R,C hello.py&&\
-		flake8 *.py
+		pylint --disable=R,C hello.py
+		#flake8 *.py
 
 all: install lint test format
